@@ -1,0 +1,19 @@
+@startuml
+class Markov {
++ markov()
+
+- static final String BEGINS_SENTENCE
+- static final String PUNCTUATION_MARKS
+- String prevWord
+- HashMap<String, ArrayList<String>> words
+
++ getSentence() : String
++ addFromFile(String): void
++ addWord(String) : void
+- randomWord(String) : String
++ toString() : String
++ getWords() : HashMap<String, ArrayList<String>>
++ addLine(String) : void
++ endsWithPunctuation(String) : boolean
+}
+@enduml
